@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <title>Phiếu đăng ký</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tên khách hàng</th>
+                <th scope="col">Nhân viên</th>
+                <th scope="col">Phòng</th>
+                <th scope="col">Ngày nhận phòng</th>
+                <th scope="col">Ngày trả phòng</th>
+            </tr>
+        </thead>
+        <tbody id="result-registrations">
+
+        </tbody>
+    </table>
+    <form id="add-registration" method="POST">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Tên khách hàng</span>
+            </div>
+            <select name="" id="tenkhachhang" class="form-control" required>
+                <option value="">Chọn tên khách hàng</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >Nhân viên</span>
+            </div>
+            <select name="" id="tennhanvien" class="form-control" required>
+                <option value="">Chọn tên nhân viên</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Phòng thuê</span>
+            </div>
+            <select name="" id="phongthue" class="form-control" required>
+                <option value="">Chọn phòng thuê</option>
+            </select>
+            <!-- <input id="phongthue" type="text" class="form-control" placeholder="Phòng thuê" aria-describedby="basic-addon1"> -->
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Ngày nhận phòng</span>
+            </div>
+            <input id="ngaynhanphong" type="text" class="form-control" placeholder="Ngày nhận phòng" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Ngày trả phòng</span>
+            </div>
+            <input id="ngaytraphong" type="text" class="form-control" placeholder="Ngày trả phòng" aria-describedby="basic-addon1">
+        </div>
+        
+        <button class="add" type="submit">Thêm</button>
+        </form>
+        <hr>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="/Registration.js"></script>
+
+
+</body>
+
+</html>
